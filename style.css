@@ -284,7 +284,7 @@ header{
 }
 
 .robot1-face1{
-    background-image: url(/resources/robot1.png);
+    background-image: url(resources/robot1.png);
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
