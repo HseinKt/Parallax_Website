@@ -19,6 +19,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     background-color: #44CFC7;
+    overflow-x: hidden;
 }
 
 header h1 {
@@ -60,7 +61,7 @@ a:hover {
 /*Parallax, sections */
 section {
     width: 100%;
-    height: 700px;
+    height: 100vh;
 }
 
 .sec1 {
@@ -70,13 +71,13 @@ section {
     background-attachment: fixed;
 }
 .sec2 {
-    background: url(resources/dl2.jpeg) ;
+    background: url(resources/dl2.png) ;
     background-position: center center;
     Background-size: cover;
     background-attachment: fixed;
 }
 .sec3 {
-    background: url(resources/dl3.avif) ;
+    background: url(resources/dl3.webp) ;
     background-position: center center;
     Background-size: cover;
     background-attachment: fixed;
@@ -96,10 +97,11 @@ section {
     height: auto;
     text-align: center;
     display: inline-block;
+    
 }
 
 .deep{
-    font-size: 70px;
+    font-size: 60px;
     padding-left: 0px;
     position: relative;
     animation: rightmove 10s infinite;
@@ -107,11 +109,11 @@ section {
 
 @keyframes rightmove {
     from {right : 0px;}
-    to {right: 600px;}
+    to {right: 80vh;}
 }
 
 .learning{
-    font-size: 70px;
+    font-size: 60px;
     padding-right: 0px;
     position: relative;
     animation: leftmove 10s infinite;
@@ -119,7 +121,7 @@ section {
 
 @keyframes leftmove {
     from {left : 0px;}
-    to {left: 600px;}
+    to {left: 75vh;}
 }
 
 /*TypeWriter-effect*/
@@ -139,7 +141,7 @@ section {
     flex-direction: row;
     justify-content: center;
 
-    font-size: 20px;
+    font-size: 15px;
     border-right: 2px solid;
     width: 100%;
     white-space: nowrap;
@@ -171,7 +173,7 @@ section {
     
     @keyframes rightmove {
         from {right : 0px;}
-        to {right: 250px;}
+        to {right: 55vh;}
     }
     
     .learning{
@@ -181,7 +183,7 @@ section {
     
     @keyframes leftmove {
         from {left : 0px;}
-        to {left: 230px;}
+        to {left: 50vh;}
     }
         
     /*TypeWriter-effect*/
@@ -208,13 +210,13 @@ section {
     }
 }
 
-@media (max-width : 650px) {
+@media (max-width : 640px) {
     header h1 {
-        font-size: 15px;
+        font-size: 13px;
     }
     
     header nav ul li {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     /*Scrolling-text*/
@@ -225,7 +227,7 @@ section {
     
     @keyframes rightmove {
         from {right : 0px;}
-        to {right: 180px;}
+        to {right: 30vh;}
     }
     
     .learning{
@@ -235,7 +237,7 @@ section {
     
     @keyframes leftmove {
         from {left : 0px;}
-        to {left: 170px;}
+        to {left: 30vh;}
     }
 
     /*TypeWriter-effect*/
@@ -251,7 +253,8 @@ section {
     }
 
     .explanation {
-        font-size: 10px;
+        justify-content: flex-start;
+        font-size: 8.5px;
         padding-top: 0px;
         border-right: none;
         width: 100%;
