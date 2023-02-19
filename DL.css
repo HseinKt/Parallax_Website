@@ -60,7 +60,7 @@ a:hover {
 /*Parallax, sections */
 section {
     width: 100%;
-    height: 700px;
+    height: 100vh;
 }
 
 .sec1 {

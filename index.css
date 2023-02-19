@@ -93,6 +93,7 @@ header{
     perspective: 1px;
     background: url(resources/background4.jpg) center center / cover;
     position: relative;
+    overflow: hidden;
 }
 
 .content {
@@ -144,6 +145,10 @@ header{
     /* scale: 1.3; */
 }
 
+.robot4 {
+    width: 50%;
+}
+
 .learnmore {
     padding: 10px 15px;
     border: none;
@@ -172,4 +177,69 @@ header{
 
 .quote_box {
     font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 10%;
+        flex-wrap: wrap;
+    }
+    header h1 {
+        padding-top: 10px;
+        margin: auto;
+    }
+    .part1 {
+        width: 80%;
+        flex-direction: column;
+        margin: auto;
+    }
+    .text_left {
+        width: 100%;
+        text-align: center;
+    }
+    .robot {
+        width: 90%;
+    }
+    .robot4 {
+        width: 90%;
+        height: 45vh;
+        object-fit: cover;
+        object-position: top;
+    }
+    .part2 {
+        width: 80%;
+        flex-direction: column;
+        margin: auto;
+    }
+    .text_right {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .learnmore {
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        padding: 20px 5px;
+    }
+    .nav_links li{ 
+        padding: 0px 5px;
+    }
+
+    li, a{ 
+        font-size: 18px;
+    }
+    ul {
+        padding: 0;
+    }
+    .parallax {
+        padding-top: 25%;
+    }
+
+    .robot {
+        width: 100%;
+    }
 }
