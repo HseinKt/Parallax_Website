@@ -529,8 +529,8 @@ header{
     height: 30%;
     margin-top: 15em;
     margin-left: 7em;
-    background-image: url(resources/banner2.png);
+    background-image: url(resources/banner3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 }
