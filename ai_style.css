@@ -55,7 +55,7 @@ header{
 .container {
   text-align: center;
   color: var(--color);
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -107,7 +107,6 @@ header{
     max-height: 87px;
     left: 100px;
     top: 150px;
-    padding: 1em;;
     font-family: 'Orbitron';
     font-style: normal;
     padding: 2em;
@@ -146,7 +145,7 @@ header{
     background-repeat: no-repeat;
     background-position: center bottom;
     position: absolute;
-    top: 125px;
+    top: 160px;
     margin-left: 10%;
     margin-right: 10%;
     width: 900px;
@@ -268,7 +267,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 330px;
+    margin-top: 360px;
     margin-left: 45px;
     z-index: 1;
 }
@@ -279,7 +278,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 4.3em;
     margin-right: 30px;
     transform: rotateY(180deg);
     z-index: 1;
@@ -506,7 +505,7 @@ header{
     width: 40%;
     height: 35%;
     margin-left: 8em;
-    margin-top: 31em;
+    margin-top: 34em;
     background-image: url(resources/banner1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -533,4 +532,257 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+}
+
+@media (max-width: 1500px){
+
+    .container, .container3{
+        width: 112vw;
+    }
+    .robot1 h1, .robot2 h1{
+        font-size: 0;
+    }
+    .robot3 h1, .robot4 h1{
+        font-size: 0;
+    }
+    
+    
+    .flexText1 h1{
+        width: 600px;
+        height: 50px;
+        left: 0;
+        margin-top: 300px;
+        margin-left: 150px;
+        top: 0;
+        padding-top: 1em;
+        font-weight: 900;
+        font-size: 60px;
+        letter-spacing: 0.2em;
+        color: white;
+        z-index: 1;
+    }
+    .flexText1 p{
+        width: 800px;
+        height: 700px;
+        left: 0;
+        top: 0;
+        margin-top: 450px;
+        margin-left: 250px;
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 65px;
+        line-height: 70px;
+        letter-spacing: 0.05em;
+        color: white;  
+        padding-top: 1.5em;
+        z-index: 1;
+    }
+    .robot1-face1{
+        top: 215px;
+    }
+    .blank,
+    .other {
+        width: 112vw;
+    }
+    .text-flex p{
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 2px;
+        padding-top: 1em;
+        text-align: left;
+    }
+    .img-flex{
+        margin-top: 415px;
+        margin-right: -9.7em;
+    }
+    .robot2-face{
+        margin-top: 123px;
+    }
+    .decoration-box2{
+        margin-top: 60%;
+    }
+    .box2-back{
+        margin-top: 61%;
+    }
+    .item p{
+        padding: 1.5em;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .container, .container3{
+        width: 314vw;
+    }
+  
+    .robot1 h1, .robot2 h1{
+        font-size: 0;
+    }
+    .robot3 h1, .robot4 h1{
+        font-size: 0;
+    }
+    
+    
+    .flexText1 h1{
+        width: 600px;
+        height: 50px;
+        left: 0;
+        margin-top: 300px;
+        margin-left: 150px;
+        top: 0;
+        padding-top: 1em;
+        font-weight: 900;
+        font-size: 60px;
+        letter-spacing: 0.2em;
+        color: white;
+        z-index: 1;
+    }
+    .flexText1 p{
+        width: 800px;
+        height: 700px;
+        left: 0;
+        top: 0;
+        margin-top: 450px;
+        margin-left: 250px;
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 65px;
+        line-height: 70px;
+        letter-spacing: 0.05em;
+        color: white;  
+        padding-top: 1.5em;
+        z-index: 1;
+    }
+    .robot1-face1{
+        top: 110px;
+    }
+    .front-box{
+        margin-left: 30px;
+        left: 52em;
+        top: 20em;
+        width: 210px;
+        height: 80px;
+        z-index: 2;
+    }
+    .front-box h1{
+        width: max-content;
+        height: 30px;
+        font-size: 20px;
+        padding-left: 1.8em;
+        padding-top: 0.7em;
+    }
+    .back-box{
+        margin-left: 30px;
+        left: 52.5em;
+        top: 20.5em;
+        width: 210px;
+        height: 80px;
+        z-index: 1; 
+    }
+    .blank,
+    .other {
+        width: 314vw;
+    }
+    .text-flex{
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        margin-left: 30em;
+        margin-top: -5em;
+    }
+    .text-flex p{
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        padding-top: 1em;
+        text-align: left;
+    }
+    .img-flex{
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        margin-top: 448px;
+        margin-left: 26em;
+    }
+    .robot2-face{
+        width: 750px;
+        min-height: 800px;
+        margin-top: 45px;
+        margin-left: 20em;
+    }
+    .decoration-box2{
+        margin-top: 46em;
+        margin-left: 20em;
+    }
+    .box2-back{
+        margin-top: 48em;
+        margin-left: 22em;
+    }
+    .container3-flex{
+        width: 314vw;
+    }
+    .container3-text{
+        width: 180vw;
+    }
+    .container3-divText{
+        width: 600px;
+        height: 150px;
+    }
+    .container3-divText h1{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 0.5em;
+        margin-left: 1em;
+        font-size: 30px;
+    }
+    .container3-divText p{
+        width: 30em;
+        padding-left: 0.5em;
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        margin-left: 2.5em;;
+        font-size: 19px;
+    }
+    .container3-card{
+        height: 60%;
+        margin-top: 10em;
+    }
+    .item2{
+        width: 250px;
+        height: 220px;
+    }
+    .item2 h1{
+        font-size: 15px;
+    }
+    .item2 p{
+        font-size: 10px;
+    }
+    .img1{
+        width: 120%;
+        margin-left: 2em;
+    }
+    .img2{
+        width: 80%;
+        height: 30%;
+        margin-left: 12em;
+        margin-top: 15em;
+    }
+    .img3{
+        width: 50%;
+        height: 20%;
+        margin-top: 25em;
+        margin-left: 2em;
+    }
+    .item p{
+        padding: 1.5em;
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
