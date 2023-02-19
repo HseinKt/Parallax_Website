@@ -158,7 +158,8 @@ header{
 }
 
 .title {
-    font-size: 35px;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .quote {
