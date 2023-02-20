@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Lato:wght@400;700;900&family=Orbitron:wght@500;900&display=swap');
-
-
 body {
     margin: 0;
 }
-
 .mainwrapper {
+    width: 100%;
     height: 100vh;
     perspective: 1px;
     transform-style: preserve-3d;
@@ -15,7 +13,6 @@ body {
     position: absolute;
     top: 0;
 }
-
 /* Nav Bar Styling*/
 header h1 {
     font-family: "Orbitron";
@@ -25,7 +22,6 @@ header h1 {
     cursor: pointer;
     margin-right: auto;
 }
-
 li,
 a {
     font-family: "Orbitron";
@@ -36,36 +32,30 @@ a {
     text-decoration: none;
     color: black;
 }
-
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
     background-color: white;
     position: relative;
     z-index: 10;
-    opacity: 0.4;
+    opacity: 1;
 }
-
 .nav_links {
     list-style: none;
 }
-
 .nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
-
 .nav_links li a {
     transition: all 0.3s ease 0s;
 }
-
 .nav_links li a:hover {
     color: #B936F5;
     text-decoration: underline;
 }
-
 /* Containers*/
 .container {
     text-align: center;
@@ -79,11 +69,7 @@ header {
     background-image: url(resources/stars.gif);
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 5%;
 }
-
 .container2 {
     text-align: center;
     width: 100vw;
@@ -98,7 +84,6 @@ header {
     background-position: center;
     background-attachment: fixed;
 }
-
 .container3 {
     text-align: center;
     color: var(--color);
@@ -113,7 +98,6 @@ header {
     background-position: center;
     background-attachment: fixed;
 }
-
 /* container 1*/
 .flexText1 {
     display: flex;
@@ -121,10 +105,9 @@ header {
     justify-content: flex-start;
     min-width: 800px;
     margin-bottom: 30%;
-    margin-right: 20%;
-    z-index: 1;
+    margin-right: 30%;
+    z-index: 3;
 }
-
 .flexText1 h1 {
     max-width: fit-content;
     font-family: 'Orbitron';
@@ -133,8 +116,15 @@ header {
     font-size: 50px;
     color: white;
 }
-
-
+.flexText1 p{
+    min-width: fit-content;
+    margin-bottom: auto;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: white;   
+}
 .flexbox1 {
     min-width: 50%;
     height: 600px;
@@ -144,21 +134,21 @@ header {
     position: absolute;
     margin-top: -9%;
 }
-
 .robot1-face1 {
     background-image: url(resources/robot1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-attachment: fixed;
     width: 100%;
     height: 130%;
-    padding-bottom: 20px;
+    padding-top: 20px;
     left: 328px;
+    z-index: 2;
 }
-
 .front-box {
     border: 3px solid black;
-    margin-left: 2%;
+    margin-right: 20%;
     position: absolute;
     top: 30%;
     background: #B936F5;
@@ -166,7 +156,6 @@ header {
     height: 100px;
     z-index: 1;
 }
-
 .front-box h1 {
     position: absolute;
     width: max-content;
@@ -180,18 +169,16 @@ header {
     padding-left: 1.5em;
     padding-top: 0.7em;
 }
-
 .back-box {
     left: 1%;
     top: 31%;
     width: 250px;
     height: 100px;
-    margin-left: 30px;
+    margin-right: 20px;
     position: absolute;
     background: white;
     max-width: 100%;
 }
-
 /* Container 2*/
 .section2 {
     min-width: 100%;
@@ -199,7 +186,6 @@ header {
     display: flex;
     justify-content: center;
 }
-
 .section2-text {
     min-width: 250px;
     max-height: 650px;
@@ -209,7 +195,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 .text-flex p {
     font-family: 'Orbitron';
     font-weight: lighter;
@@ -219,17 +204,14 @@ header {
     padding: 1em;
     text-align: left;
 }
-
 .text-flex {
     margin-left: 50px;
     margin-right: 50px;
 }
-
 .text-flex span {
     font-family: 'Orbitron';
     font-weight: bold;
 }
-
 .section2-img {
     min-width: 50%;
     min-height: 80%;
@@ -237,7 +219,6 @@ header {
     justify-content: center;
     align-items: flex-end;
 }
-
 .img-flex {
     width: 94.5%;
     height: 67%;
@@ -248,7 +229,6 @@ header {
     margin-left: 45px;
     z-index: 1;
 }
-
 .robot2-face {
     width: 40%;
     height: 80%;
@@ -260,7 +240,6 @@ header {
     transform: rotateY(180deg);
     z-index: 1;
 }
-
 .decoration-box2 {
     border: 3px solid black;
     position: absolute;
@@ -272,7 +251,6 @@ header {
     margin-top: 50%;
     z-index: 1;
 }
-
 .decoration-box2 h1 {
     width: max-content;
     margin: auto;
@@ -286,7 +264,6 @@ header {
     font-size: 17px;
     text-align: center;
 }
-
 .box2-back {
     position: absolute;
     width: 250px;
@@ -297,22 +274,18 @@ header {
     margin-left: -70px;
     margin-top: 43%;
 }
-
 .blank,
 .other {
-    width: 100%;
-    max-width: 100%;
+    min-width: 100vw;
     min-height: 30vh;
     margin: 0;
     background-color: black;
 }
-
 .second {
     background-image: url(resources/bg.jpg);
     background-attachment: fixed;
     height: 1200px;
 }
-
 .item {
     display: flex;
     max-width: 320px;
@@ -325,7 +298,6 @@ header {
     -moz-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
     box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
 }
-
 .item p {
     padding: 2em;
     text-align: left;
@@ -334,11 +306,9 @@ header {
     letter-spacing: 1.5px;
     line-height: 17px;
 }
-
 .item p span {
     font-weight: bolder;
 }
-
 .img {
     width: 90%;
     height: 200px;
@@ -349,28 +319,22 @@ header {
     border-radius: .3em;
     ;
 }
-
 .img-first {
     background-image: url(resources/bot.gif);
 }
-
 .img-second {
     background-image: url(resources/finance.gif);
 }
-
 .img-third {
     background-image: url(resources/health.gif);
 }
-
 .img-fourth {
     background-image: url(resources/social.gif);
 }
-
 .second {
     flex-direction: row;
     gap: 1.6em;
 }
-
 /* Container 3*/
 .container3-flex {
     min-width: 100%;
@@ -378,16 +342,13 @@ header {
     display: flex;
     justify-content: center;
 }
-
 .container3-text {
     width: 50%;
 }
-
 .container3-divText {
     min-width: 100px;
     max-width: fit-content;
 }
-
 .container3-divText h1 {
     min-width: 120px;
     padding-left: 0.5em;
@@ -399,7 +360,6 @@ header {
     color: white;
     letter-spacing: 1px;
 }
-
 .container3-divText p {
     width: fit-content;
     padding-left: 1em;
@@ -414,7 +374,6 @@ header {
     font-size: 19px;
     color: white;
 }
-
 .container3-card {
     min-width: 50%;
     height: 77%;
@@ -422,7 +381,6 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 .item2 {
     display: flex;
     max-width: 350px;
@@ -435,7 +393,6 @@ header {
     -moz-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
     box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
 }
-
 .item2 h1 {
     font-family: 'Orbitron';
     font-weight: bold;
@@ -444,7 +401,6 @@ header {
     padding-top: 1em;
     margin-right: 1em;
 }
-
 .item2 p {
     font-family: 'Orbitron';
     font-weight: normal;
@@ -458,66 +414,56 @@ header {
     margin-right: 2em;
     letter-spacing: 1px;
 }
-
 .secondItem h1 {
     margin-left: 2em;
 }
-
 .container3-img {
     width: 50vw;
     height: 100vh;
 }
-
 .img1 {
     position: absolute;
-    width: 40%;
+    width: 30%;
     height: 35%;
-    margin-left: 8em;
-    margin-top: 34em;
+    margin-left: 2%;
+    margin-top: 25%;
     background-image: url(resources/banner1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .img2 {
     position: absolute;
-    width: 25%;
-    height: 40%;
-    margin-left: 25em;
+    width: 20%;
+    height: 30%;
+    margin-left: 15%;
     margin-top: 7em;
     background-image: url(resources/banner2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .img3 {
     position: absolute;
-    width: 17%;
-    height: 30%;
-    margin-top: 15em;
-    margin-left: 7em;
+    width: 15%;
+    height: 20%;
+    margin-top: 15%;
+    margin-left: 2%;
     background-image: url(resources/banner3.jpg);
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
 }
-
 /* Media Queries*/
 @media (max-width: 1500px) {
-
     .container {
         width: 112vw;
     }
-
     .container3 {
         width: 112vw;
         height: 150vh;
     }
-
     .flexText1 h1 {
-
         left: 0;
         margin-top: 300px;
         margin-left: 150px;
@@ -529,7 +475,6 @@ header {
         color: white;
         z-index: 1;
     }
-
     .flexText1 p {
         width: 800px;
         height: 700px;
@@ -547,16 +492,13 @@ header {
         padding-top: 1.5em;
         z-index: 1;
     }
-
     .robot1-face1 {
         top: 215px;
     }
-
     .blank,
     .other {
         width: 112vw;
     }
-
     .text-flex p {
         font-weight: lighter;
         font-size: 20px;
@@ -565,7 +507,6 @@ header {
         padding-top: 1em;
         text-align: left;
     }
-
     .img-flex {
         margin-top: 415px;
         margin-right: -9.7em;
@@ -574,30 +515,23 @@ header {
     .robot2-face {
         margin-top: 123px;
     }
-
     .decoration-box2 {
         margin-top: 60%;
     }
-
     .box2-back {
         margin-top: 61%;
     }
-
     .item p {
         padding: 1.5em;
         font-size: 18px;
         line-height: 25px;
     }
-
 }
-
 @media (min-width: 1100px) {
-
     .container,
     .container3 {
         width: 112vw;
     }
-
     .flexText1 h1 {
         margin-top: 100px;
         margin-left: 70px;
@@ -606,7 +540,6 @@ header {
         font-size: 50px;
         letter-spacing: 0.1em;
     }
-
     .flexText1 p {
         min-width: 400px;
         height: fit-content;
@@ -617,29 +550,23 @@ header {
         font-weight: 500;
         font-size: 45px;
     }
-
     .robot1-face1 {
         margin-top: 5%;
     }
-
     .front-box {
         left: 75%;
     }
-
     .back-box {
         left: 76%;
     }
-
     .blank,
     .other {
         width: 112vw;
     }
-
     .text-flex {
         min-width: 700px;
         margin-bottom: 10%;
     }
-
     .text-flex p {
         font-weight: lighter;
         font-size: 20px;
@@ -648,31 +575,16 @@ header {
         padding-top: 1em;
         text-align: left;
     }
-
     .img-flex {
         margin-top: 37%;
     }
-
     .robot2-face {
         margin-top: 2%;
     }
-
     .decoration-box2 {
         margin-top: 40%;
     }
-
     .box2-back {
         margin-top: 41%;
     }
-}
-
-footer {
-    background-color: #ccc;
-    color: #333;
-    padding: 10px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
 }
