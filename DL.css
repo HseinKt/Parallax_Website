@@ -2,44 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Lato:wght@400;700;900&family=Orbitron:wght@500;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    overflow: hidden;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+	font-family: 'Poppins', sans-serif;
     background-color: #44cfc7;
 }
 
-.mainwrapper {
-    height: 100vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-y: auto;
+.parallax {
     overflow-x: hidden;
-    position: absolute;
-    top: 0;
-    width: 100%;
 }
 
 /*header*/
 header {
     display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 30px 10%;
     background-color: #44CFC7;
     overflow-x: hidden;
-    opacity: 0.4;
-    z-index: 5;
 }
 
 header h1 {
@@ -47,7 +32,6 @@ header h1 {
     font-size: 30px;
     line-height: 30px;
     font-weight: 900;
-    cursor: pointer;
     margin-right: auto;
 }
 
@@ -75,9 +59,8 @@ a {
     font-weight: 700;
 
 }
-
 a:hover {
-    color: #2c4e6b;
+    color:  #2c4e6b ;
     text-decoration: underline;
 }
 
@@ -88,29 +71,27 @@ section {
 }
 
 .sec1 {
-    background: url(resources/dl1.jpg);
+    background: url(resources/dl1.jpg) ;
     background-position: center center;
     Background-size: cover;
     background-attachment: fixed;
 }
-
 .sec2 {
-    background: url(resources/dl2.png);
+    background: url(resources/dl2.png) ;
     background-position: center center;
     Background-size: cover;
     background-attachment: fixed;
 }
-
 .sec3 {
-    background: url(resources/dl3.webp);
+    background: url(resources/dl3.webp) ;
     background-position: center center;
     Background-size: cover;
     background-attachment: fixed;
 }
 
 .sec4 {
-    background: url(resources/dl4.gif);
-    background-position: center center;
+    background: url(resources/dl4.gif) ;
+    background-position: center center  ;
     Background-size: cover;
     margin: 50px;
     background-attachment: fixed;
@@ -122,10 +103,10 @@ section {
     height: auto;
     text-align: center;
     display: inline-block;
-
+    
 }
 
-.deep {
+.deep{
     font-size: 60px;
     padding-left: 0px;
     position: relative;
@@ -133,16 +114,11 @@ section {
 }
 
 @keyframes rightmove {
-    from {
-        right: 0px;
-    }
-
-    to {
-        right: 80vh;
-    }
+    from {right : 0px;}
+    to {right: 80vh;}
 }
 
-.learning {
+.learning{
     font-size: 60px;
     padding-right: 0px;
     position: relative;
@@ -150,13 +126,8 @@ section {
 }
 
 @keyframes leftmove {
-    from {
-        left: 0px;
-    }
-
-    to {
-        left: 75vh;
-    }
+    from {left : 0px;}
+    to {left: 75vh;}
 }
 
 /*TypeWriter-effect*/
@@ -185,9 +156,7 @@ section {
 }
 
 @keyframes typing {
-    from {
-        width: 0
-    }
+    from { width: 0 }
 }
 
 
@@ -196,43 +165,33 @@ section {
         font-size: 20px;
         line-height: 20px;
     }
-
+    
     header nav ul li {
         padding: 10px;
         font-size: 15px;
     }
 
     /*Scrolling-text*/
-    .deep {
+    .deep{
         font-size: 40px;
         animation: rightmove 11s infinite;
     }
-
+    
     @keyframes rightmove {
-        from {
-            right: 0px;
-        }
-
-        to {
-            right: 55vh;
-        }
+        from {right : 0px;}
+        to {right: 55vh;}
     }
-
-    .learning {
+    
+    .learning{
         font-size: 40px;
         animation: leftmove 11s infinite;
     }
-
+    
     @keyframes leftmove {
-        from {
-            left: 0px;
-        }
-
-        to {
-            left: 50vh;
-        }
+        from {left : 0px;}
+        to {left: 50vh;}
     }
-
+        
     /*TypeWriter-effect*/
     .Typewriter-effect {
         padding: 20px;
@@ -253,9 +212,7 @@ section {
     }
 
     @keyframes typing {
-        from {
-            width: 0
-        }
+        from { width: 0 }
     }
 }
 
@@ -263,40 +220,30 @@ section {
     header h1 {
         font-size: 13px;
     }
-
+    
     header nav ul li {
         font-size: 9px;
     }
 
     /*Scrolling-text*/
-    .deep {
+    .deep{
         font-size: 30px;
         animation: rightmove 12s infinite;
     }
-
+    
     @keyframes rightmove {
-        from {
-            right: 0px;
-        }
-
-        to {
-            right: 30vh;
-        }
+        from {right : 0px;}
+        to {right: 30vh;}
     }
-
-    .learning {
+    
+    .learning{
         font-size: 30px;
         animation: leftmove 12s infinite;
     }
-
+    
     @keyframes leftmove {
-        from {
-            left: 0px;
-        }
-
-        to {
-            left: 30vh;
-        }
+        from {left : 0px;}
+        to {left: 30vh;}
     }
 
     /*TypeWriter-effect*/
@@ -319,15 +266,4 @@ section {
         width: 100%;
         animation: none;
     }
-}
-
-footer {
-    background-color: #ccc;
-    color: #333;
-    padding: 10px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
 }
