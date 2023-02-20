@@ -12,10 +12,29 @@ body {
     margin: 0;
     font-family: "Orbitron";
     background-repeat: no-repeat;
-    background-image: url(resources/gpt.webp);
+    background-color: #CCC;
     background-size: cover;
 }
 
+.wrapper {
+    margin: 5% auto;
+    margin-top: 0;
+    background-image: url(resources/gpt.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /* dimensions are important, ensure it is tall enough to scroll */
+    min-height: 100vh;
+
+    /* you are free to lay out the container items with flexbox or whatever means you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    padding: 3%;
+}
 
 .mainwrapper {
     height: 100vh;
@@ -78,7 +97,7 @@ header {
 
 .container {
     width: 60%;
-    margin: 50px auto;
+    margin: 5% auto;
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid #e7e7e7;
     border-radius: 10px;
@@ -86,14 +105,80 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container2 {
-    width: 60%;
-    margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.4);
+
+
+.container3 {
+
+    margin: 5% auto;
+    background-image: url(resources/gpt4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /* dimensions are important, ensure it is tall enough to scroll */
+    min-height: 100vh;
+
+    /* you are free to lay out the container items with flexbox or whatever means you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    padding: 10%;
     border: 1px solid #e7e7e7;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container4 {
+
+    margin: 5% auto;
+    margin-bottom: 0;
+    background-image: url(resources/gpt5.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /* dimensions are important, ensure it is tall enough to scroll */
+    min-height: 100vh;
+
+    /* you are free to lay out the container items with flexbox or whatever means you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    padding: 10%;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax-container {
+        background-attachment: scroll;
+    }
+}
+
+.container2 {
+    margin: 5% auto;
+    /*  this is where the magic happens:  */
+    background-image: url(resources/gpt3);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /* dimensions are important, ensure it is tall enough to scroll */
+    min-height: 100vh;
+
+    /* you are free to lay out the container items with flexbox or whatever means you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .chat-header {
@@ -194,8 +279,7 @@ nav a {
 }
 
 section {
-    margin: 10px;
-    padding: 10px;
+    padding: 3%;
     width: 60%;
     height: 40%;
 }
