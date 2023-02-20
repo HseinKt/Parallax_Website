@@ -31,6 +31,10 @@ header h1 {
     margin-right: auto;
 }
 
+header h1 > a:hover {
+    text-decoration: none;
+}
+
 li,
 a {
     font-family: "Orbitron";
@@ -66,7 +70,7 @@ header {
 }
 
 .nav_links li a:hover {
-    color: #B936F5;
+    color: #d67dff;
     text-decoration: underline;
 }
 
