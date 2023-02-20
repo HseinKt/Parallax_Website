@@ -21,6 +21,7 @@ body {
     position: absolute;
     top: 0;
 }
+
 header h1 {
     font-family: "Orbitron";
     font-weight: 900;
@@ -30,7 +31,8 @@ header h1 {
     margin-right: auto;
 }
 
-li, a{
+li,
+a {
     font-family: "Orbitron";
     font-style: normal;
     font-weight: 700;
@@ -39,7 +41,8 @@ li, a{
     text-decoration: none;
     color: #c47d67;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,19 +51,22 @@ header{
     position: relative;
     z-index: 3;
 }
-.nav_links{
+
+.nav_links {
     list-style: none;
 }
-.nav_links li{
+
+.nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav_links li a{
+.nav_links li a {
     transition: all 0.3s ease 0s;
 }
-.nav_links li a:hover{
-    color:#B936F5;
+
+.nav_links li a:hover {
+    color: #B936F5;
     text-decoration: underline;
 }
 
@@ -78,7 +84,7 @@ header{
     height: 100vh;
     top: 0;
     left: 0;
-    background: url(resources/background.jpeg) center center / cover; 
+    background: url(resources/background.jpeg) center center / cover;
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px);
@@ -128,7 +134,7 @@ header{
 
 .text_right {
     margin-top: 5%;
-    width:60%;
+    width: 60%;
     height: 50vh;
     background-color: #20202095;
     text-align: left;
@@ -177,38 +183,46 @@ header{
         padding: 20px 10%;
         flex-wrap: wrap;
     }
+
     header h1 {
         padding-top: 10px;
         margin: auto;
     }
+
     .part1 {
         width: 80%;
         flex-direction: column;
         margin: auto;
     }
+
     .text_left {
         width: 100%;
         text-align: center;
     }
+
     .robot {
         width: 90%;
     }
+
     .robot4 {
         width: 90%;
         height: 45vh;
         object-fit: cover;
         object-position: top;
     }
+
     .part2 {
         width: 80%;
         flex-direction: column;
         margin: auto;
     }
+
     .text_right {
         width: 100%;
         height: auto;
         text-align: center;
     }
+
     .learnmore {
         margin-bottom: 2%;
     }
@@ -218,16 +232,20 @@ header{
     header {
         padding: 20px 5px;
     }
-    .nav_links li{ 
+
+    .nav_links li {
         padding: 0px 5px;
     }
 
-    li, a{ 
+    li,
+    a {
         font-size: 18px;
     }
+
     ul {
         padding: 0;
     }
+
     .parallax {
         padding-top: 25%;
     }
@@ -235,4 +253,15 @@ header{
     .robot {
         width: 100%;
     }
+}
+
+footer {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
